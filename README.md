@@ -20,7 +20,8 @@ Project structure
     ├── img
     ├── js
     │   └── app.coffee
-    └── package.json
+    ├── package.json
+    └── tasks
 
 
 How to install
@@ -44,3 +45,9 @@ How to build
     grunt build
 
 App will be deployed in `build/` directory, with minified html, css and js.
+
+TODO
+-------------
+
+- Add [grunt-uncss](https://github.com/addyosmani/grunt-uncss)
+- Image sprites

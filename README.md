@@ -26,7 +26,10 @@ Project structure
 How to install
 --------------
 
-`npm install`
+    git clone git@github.com:PavelVanecek/static-skeleton.git mysite
+    cd mysite
+    rm -rf .git
+    npm install
 
 How to develop
 --------------

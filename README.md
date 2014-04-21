@@ -34,12 +34,13 @@ How to install
 How to develop
 --------------
 
-1. `grunt`
-2. `open html/index.html`
-3. Type! Browser will refresh on save.
+    grunt
+
+Open `html/index.html` in browser and type code! Browser will refresh on save.
 
 How to build
 -------------
 
-`grunt build`
+    grunt build
+
 App will be deployed in `build/` directory, with minified html, css and js.

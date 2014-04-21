@@ -108,17 +108,7 @@ module.exports = (grunt) ->
         if grunt.option('stage')
           return 'cssmin'
 
-  grunt.loadNpmTasks 'grunt-contrib-concat'
-  grunt.loadNpmTasks 'grunt-contrib-coffee'
-  grunt.loadNpmTasks 'grunt-contrib-stylus'
-  grunt.loadNpmTasks 'grunt-contrib-jade'
-  grunt.loadNpmTasks 'grunt-contrib-uglify'
-  grunt.loadNpmTasks 'grunt-contrib-cssmin'
-  grunt.loadNpmTasks 'grunt-contrib-htmlmin'
-  grunt.loadNpmTasks 'grunt-contrib-clean'
-  grunt.loadNpmTasks 'grunt-preprocess'
-  grunt.loadNpmTasks 'grunt-este-watch'
-  grunt.loadNpmTasks 'grunt-usemin'
+  require('load-grunt-tasks')(grunt)
 
   grunt.registerTask 'compile', ['coffee', 'stylus', 'template']
 

@@ -49,5 +49,4 @@ App will be deployed in `build/` directory, with minified html, css and js.
 TODO
 -------------
 
-- Add [grunt-uncss](https://github.com/addyosmani/grunt-uncss)
 - Image sprites

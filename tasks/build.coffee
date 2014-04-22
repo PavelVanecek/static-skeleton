@@ -5,6 +5,9 @@ module.exports = (grunt) ->
     # compile stylus + coffee
     'compile'
 
+    # remove unused css rules
+    'uncss'
+
     # detect scripts and styles in html file, prepare it for concatenation
     'useminPrepare'
 

@@ -27,7 +27,7 @@ Project structure
 How to install
 --------------
 
-    git clone git@github.com:PavelVanecek/static-skeleton.git mysite
+    git clone https://github.com/PavelVanecek/static-skeleton.git mysite
     cd mysite
     rm -rf .git
     npm install

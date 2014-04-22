@@ -1,11 +1,15 @@
 # inspired by http://www.thomasboyt.com/2013/09/01/maintainable-grunt.html
 
 fs = require('fs')
-loadConfig = (path) ->
+loadConfig = (path, grunt) ->
   object = {}
   fs.readdirSync(path).forEach (option) ->
     key = option.replace(/\.coffee$/,'')
-    object[key] = require(path + option)
+    config = require(path + option)
+    if 'function' is typeof config
+      object[key] = config grunt
+    else
+      object[key] = config
   return object
 
 module.exports = (grunt) ->
@@ -14,7 +18,7 @@ module.exports = (grunt) ->
     pkg: grunt.file.readJSON 'package.json'
     env: process.env
 
-  config = grunt.util._.extend baseConfig, loadConfig './tasks/options/'
+  config = grunt.util._.extend baseConfig, loadConfig './tasks/options/', grunt
 
   grunt.initConfig config
 

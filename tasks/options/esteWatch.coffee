@@ -6,7 +6,7 @@ module.exports = (grunt) ->
     livereload:
       enabled: true
       port: 35729
-      extensions: ['js', 'css', 'jade']
+      extensions: ['js', 'css', 'html']
     beep: true
 
   coffee: (filepath) ->

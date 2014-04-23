@@ -23,8 +23,14 @@ Project structure
     ├── package.json
     └── tasks
 
+How to setup my machine
+-----------------------
 
-How to install
+Install node.js and npm, then:
+
+    npm install -g grunt-cli bower
+
+How to download skeleton
 --------------
 
     git clone https://github.com/PavelVanecek/static-skeleton.git mysite

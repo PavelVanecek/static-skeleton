@@ -52,6 +52,30 @@ How to build
 
 App will be deployed in `build/` directory, with minified html, css and js.
 
+How to add dependencies
+-----------------------
+
+e. g. jquery
+
+    bower install jquery --save
+
+in `index.jade` add script reference inside `// build:js` block
+
+    // build:js js/app.min.js
+    script(src="../js/app.js")
+    // endbuild
+
+to
+
+    // build:js js/app.min.js
+    script(src="../bower_components/jquery/dist/jquery.js")
+    script(src="../js/app.js")
+    // endbuild
+
+jQuery will be included inside app.min.js.
+
+Any `*.js` files inside `js/` folder will be deleted, as they are considered compiled coffeescript and not actual libraries.
+
 TODO
 -------------
 

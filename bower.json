@@ -1,0 +1,21 @@
+{
+  "name": "static-project",
+  "version": "0.3.0",
+  "homepage": "https://github.com/PavelVanecek/static-skeleton",
+  "authors": [
+    "Pavel Vanecek <corkscreewe@gmail.com>"
+  ],
+  "description": "Static project skeleton",
+  "keywords": [
+    "static",
+    "skeleton"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

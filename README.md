@@ -43,7 +43,7 @@ How to develop
 
     grunt
 
-Open `html/index.html` in browser and type code! Browser will refresh on save.
+Open `http://localhost:8000/html/index.html` in browser and type code! Browser will refresh on save.
 
 How to build
 -------------
